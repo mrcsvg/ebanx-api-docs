@@ -2,12 +2,14 @@
   "name": "ebanx-payment",
   "version": "1.0.0",
   "dependencies": {
-    "@redocly/openapi-cli": "^0.8.3"
+    "@redocly/openapi-cli": "^0.8.3",
+    "gh-pages": "^2.2.0"
   },
   "private": true,
   "scripts": {
     "start": "openapi preview-docs",
     "build": "openapi bundle -o dist",
-    "test": "openapi validate"
+    "test": "openapi validate",
+    "gh-pages": "gh-pages -d dist"
   }
 }
