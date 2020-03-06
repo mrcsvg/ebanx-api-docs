@@ -1,7 +1,6 @@
 {
   "name": "ebanx-payment",
   "version": "1.0.0",
-  "homepage": "https://mrcsvg.github.io/ebanx-api-docs",
   "dependencies": {
     "@redocly/openapi-cli": "^0.8.3",
     "gh-pages": "^2.2.0"
@@ -10,9 +9,6 @@
   "scripts": {
     "start": "openapi preview-docs",
     "build": "openapi bundle -o dist",
-    "test": "openapi validate",
-    "gh-pages": "gh-pages -d dist",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist"
+    "test": "openapi validate"
   }
 }
